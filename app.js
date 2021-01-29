@@ -8,7 +8,7 @@ const path = require ('path');
 // app.listen(3000,()=>{
 //     console.log('server listen ok');
 // })
-app.listen(process.env.PORT || 3010, function () {
+app.listen(process.env.PORT || 3000, function() {
 });
   
 
