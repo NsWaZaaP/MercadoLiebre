@@ -1,0 +1,59 @@
+.principal-login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+.principal-login input{
+    width: 100%;    
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 15px;
+    transition: all 3s;
+}
+.nombre{    
+    margin: auto;
+    width: 70%;      
+}
+.nombre input{
+    box-shadow: 2px 2px 2px 2px rgba(0, 34, 170, 0.5);
+}
+.password{
+    margin: auto;
+    width: 70%;
+}
+.password input{
+    box-shadow: 2px 2px 2px 2px rgba(0, 34, 170, 0.5);
+}
+.button{
+    margin: auto;
+    width: 70%;
+    
+}
+button{
+    width: 100%;
+    margin:20px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background-color:#EAC926;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 2s;
+    box-shadow: 2px 2px 2px 2px rgba(0, 34, 170, 0.5);
+}
+/*? TRANSICION  */
+button:hover{
+    background-color:#0022AA;
+    color: #EAC926;
+    box-shadow: 2px 2px 2px 2px rgba(234, 201, 38, 0.5);
+}
+.principal-login:hover input{
+    box-shadow: 2px 2px 2px 2px rgba(234, 201, 38, 0.5);
+}
+
+@media(min-width: 768px){
+    .principal-login{
+        width: 70%;
+    }
+}

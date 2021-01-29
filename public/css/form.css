@@ -1,0 +1,142 @@
+form{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+form div{
+    display: flex;
+    flex-direction: column;    
+}
+form input{
+    padding: 10px;    
+}
+form label{
+    padding: 10 0 0 0px;
+}
+button{
+    width: 100%;
+    margin:10px 0;
+    padding: 15px;
+    border-radius: 15px;
+    background-color:#EAC926;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 2s;
+    box-shadow: 2px 2px 2px 2px rgba(0, 34, 170, 0.5);
+}
+/* .send-button{
+    padding: 15px;
+    border-radius: 10%;
+} */
+/* .reset-button{
+    padding: 15px;
+    border-radius: 10%;
+} */
+.icon-date{
+    position: relative;
+    padding: 15px 0 0 0 ;
+}
+.icon-date i{
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+.perfil-usuario{
+    display: flex;   
+    padding: 15px 0 0 0;
+}
+.perfil-usuario .radio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.perfil-usuario div label{
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+.perfil-usuario input{
+    margin: 0 30px;
+}
+.checkbox{
+    padding: 15px 0 0 0 ;
+}
+.checkbox div{
+    padding:0px 30px;
+}
+.checkbox div label{
+    padding: 20px 0;
+}
+.checkbox input{
+    margin: 0 30px;
+}
+/* & ALERTAS DE ERROR DILIGENCIAR FORMULARIO */
+.form-control{
+    position: relative;
+    padding: 15px 0;
+}
+.form-control input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+	width: 100%;
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+.form-control.succes input{
+    border-color: #2ecc71;
+}
+.form-control.error input {
+	border-color: #e74c3c;
+}
+.form-control i{
+    visibility: hidden;
+    position:absolute;
+    top: 40px;
+    right:10px;
+}
+.form-control.succes i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control small{
+    color: #e74c3c;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+/*? TRANSICIONES  */
+button:hover{
+    background-color:#0022AA;
+    color: #EAC926;
+    box-shadow: 2px 2px 2px 2px rgba(234, 201, 38, 0.5);
+}
+
+@media(min-width: 791px){
+form{
+    width: 70%;
+}
+}
+@media(min-width: 1279px){
+    form{
+        width: 50%;
+    }
+    }
