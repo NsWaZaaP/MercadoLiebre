@@ -5,9 +5,12 @@ const app = express();
 const path = require ('path');
 
 //? se crea el localhost con puerto 3000
-app.listen(3000,()=>{
-    console.log('server listen ok');
-})
+// app.listen(3000,()=>{
+//     console.log('server listen ok');
+// })
+app.listen(process.env.PORT || 3010, function () {
+});
+  
 
 //? se utiliza para recibir la ruta de archivos publicos
 const publicPath = path.resolve(__dirname,'./public')
